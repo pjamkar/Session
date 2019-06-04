@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+<listeners>
+<listener class-name="com.amboss.qaassignment.listeners" />
+</listeners>
+  <test name="CreateCustomeSession">
+    <classes>
+      <class name="com.amboss.qaassignment.CustomSession"/>
+    </classes>
+  </test>
+   <test name="CreateCustomExamPreparationSession">
+    <classes>
+      <class name="com.amboss.qaassignment.CreateExamPreparationSession"/>
+    </classes>
+  </test>
+</suite> <!-- Suite -->
