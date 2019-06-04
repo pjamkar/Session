@@ -2,7 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="96387" started-at="2019-06-04T21:16:52Z" finished-at="2019-06-04T21:18:28Z">
+  <suite name="Suite" duration-ms="73004" started-at="2019-06-04T23:02:15Z" finished-at="2019-06-04T23:03:28Z">
     <groups>
       <group name="CreateExamSession">
         <method signature="CreateExamPreparationSession.newExamPreparationSession()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="newExamPreparationSession" class="com.amboss.qaassignment.CreateExamPreparationSession"/>
@@ -15,41 +15,41 @@
         <method signature="CustomSession.createNewSession()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="createNewSession" class="com.amboss.qaassignment.CustomSession"/>
       </group> <!-- CreateSession -->
     </groups>
-    <test name="CreateCustomeSession" duration-ms="39750" started-at="2019-06-04T21:16:52Z" finished-at="2019-06-04T21:17:32Z">
+    <test name="CreateCustomeSession" duration-ms="35736" started-at="2019-06-04T23:02:15Z" finished-at="2019-06-04T23:02:50Z">
       <class name="com.amboss.qaassignment.CustomSession">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="setUp" is-config="true" duration-ms="18995" started-at="2019-06-04T21:16:52Z" finished-at="2019-06-04T21:17:11Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="setUp" is-config="true" duration-ms="19185" started-at="2019-06-04T23:02:15Z" finished-at="2019-06-04T23:02:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="login" duration-ms="5501" started-at="2019-06-04T21:17:11Z" finished-at="2019-06-04T21:17:17Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="login" duration-ms="4790" started-at="2019-06-04T23:02:34Z" finished-at="2019-06-04T23:02:39Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="createNewSession()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="createNewSession" duration-ms="14524" depends-on-groups="Login" started-at="2019-06-04T21:17:17Z" finished-at="2019-06-04T21:17:31Z">
+        <test-method status="PASS" signature="createNewSession()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="createNewSession" duration-ms="10684" depends-on-groups="Login" started-at="2019-06-04T23:02:39Z" finished-at="2019-06-04T23:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewSession -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="tearDown" is-config="true" duration-ms="703" started-at="2019-06-04T21:17:31Z" finished-at="2019-06-04T21:17:32Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amboss.qaassignment.CustomSession@54a097cc]" name="tearDown" is-config="true" duration-ms="821" started-at="2019-06-04T23:02:50Z" finished-at="2019-06-04T23:02:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.amboss.qaassignment.CustomSession -->
     </test> <!-- CreateCustomeSession -->
-    <test name="CreateCustomExamPreparationSession" duration-ms="56512" started-at="2019-06-04T21:17:32Z" finished-at="2019-06-04T21:18:28Z">
+    <test name="CreateCustomExamPreparationSession" duration-ms="36987" started-at="2019-06-04T23:02:51Z" finished-at="2019-06-04T23:03:28Z">
       <class name="com.amboss.qaassignment.CreateExamPreparationSession">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="setUp" is-config="true" duration-ms="21045" started-at="2019-06-04T21:17:32Z" finished-at="2019-06-04T21:17:53Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="setUp" is-config="true" duration-ms="14035" started-at="2019-06-04T23:02:51Z" finished-at="2019-06-04T23:03:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="login()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="login" duration-ms="7946" started-at="2019-06-04T21:17:53Z" finished-at="2019-06-04T21:18:01Z">
+        <test-method status="PASS" signature="login()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="login" duration-ms="5530" started-at="2019-06-04T23:03:05Z" finished-at="2019-06-04T23:03:10Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method status="PASS" signature="newExamPreparationSession()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="newExamPreparationSession" duration-ms="26708" depends-on-groups="Login" started-at="2019-06-04T21:18:01Z" finished-at="2019-06-04T21:18:28Z">
+        <test-method status="PASS" signature="newExamPreparationSession()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="newExamPreparationSession" duration-ms="16671" depends-on-groups="Login" started-at="2019-06-04T23:03:10Z" finished-at="2019-06-04T23:03:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newExamPreparationSession -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="tearDown" is-config="true" duration-ms="812" started-at="2019-06-04T21:18:28Z" finished-at="2019-06-04T21:18:28Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amboss.qaassignment.CreateExamPreparationSession@2669b199]" name="tearDown" is-config="true" duration-ms="750" started-at="2019-06-04T23:03:27Z" finished-at="2019-06-04T23:03:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
