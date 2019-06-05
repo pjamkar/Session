@@ -2,6 +2,9 @@ package com.amboss.pageobjects;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 import com.amboss.commonfunction.BaseSetup;
 
 /* This class is for Index page object to get webelements to login*/
@@ -12,6 +15,8 @@ public class IndexPage extends BaseSetup {
 	By login = By.xpath("//input[@type='submit']");
 	By customSession = By.cssSelector(".buttonized.Classic:nth-child(3n)");
 	By examPreparation = By.cssSelector(".buttonized.Classic:nth-child(2n)");
+	By logoutLink = By.xpath("//a[contains(text(), 'Log out')]");
+	By menuLink = By.xpath("//button[@id='amboss-menu']");
 
 	public WebElement getEmail() {
 		BaseSetup.waitForElement(driver, email, 10);
@@ -42,6 +47,14 @@ public class IndexPage extends BaseSetup {
 		getEmail().sendKeys(username);
 		getPassword().sendKeys(password);
 		getLogin().click();
+	}
+	
+	public void doSignOut() throws InterruptedException {
+		//BaseSetup.waitForElement(driver, menuLink, 20);
+		WebDriverWait wait = new WebDriverWait(driver, 30);
+		wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(menuLink)); 
+		driver.findElement(menuLink).click();
+		driver.findElement(logoutLink).click();
 	}
 
 }

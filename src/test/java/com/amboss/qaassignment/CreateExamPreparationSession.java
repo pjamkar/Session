@@ -25,20 +25,21 @@ public class CreateExamPreparationSession extends BaseSetup {
 		driver.manage().window().maximize();
 	}
 
-	@Test(groups = { "CreateExamSession" }, dependsOnGroups = "Login")
+	@Test
 	public void newExamPreparationSession() throws InterruptedException {
+		indexPageObj.doSignIn(ConfigProperties.getProperty("username"), ConfigProperties.getProperty("password"));
 		indexPageObj.selectExamPreparation();
 		shelfTemp.selectExam();
 		shelfTemp.chooseExam();
 		shelfTemp.startExamSession();
-		Thread.sleep(2000);
+		//indexPageObj.doSignOut();
 	}
 
-	//Test Login method, username and password are taken from config.properties file 
+	/*//Test Login method, username and password are taken from config.properties file 
 	@Test(groups = "Login")
 	public void login() {
 		indexPageObj.doSignIn(ConfigProperties.getProperty("username"), ConfigProperties.getProperty("password"));
-	}
+	}*/
 
 	@AfterClass
 	public void tearDown() {

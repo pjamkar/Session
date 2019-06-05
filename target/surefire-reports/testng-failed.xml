@@ -4,16 +4,15 @@
   <listeners>
     <listener class-name="com.amboss.qaassignment.listeners"/>
   </listeners>
-  <test thread-count="5" verbose="0" name="Test(failed)">
+  <test thread-count="5" verbose="0" name="CreateExamSession(failed)">
     <classes>
       <class name="com.amboss.qaassignment.CreateExamPreparationSession">
         <methods>
           <include name="newExamPreparationSession"/>
           <include name="tearDown"/>
-          <include name="login"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.amboss.qaassignment.CreateExamPreparationSession -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- CreateExamSession(failed) -->
 </suite> <!-- Failed suite [Suite] -->

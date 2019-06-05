@@ -28,9 +28,7 @@ public class IndividualUsmlePage extends BaseSetup {
 	}
 
 	public void selectSubject() throws InterruptedException {
-
-		driver.findElement(surgery).click();
-		Thread.sleep(2000);
+			driver.findElement(surgery).click();
 	}
 
 	public void selectExam() throws InterruptedException {
@@ -40,7 +38,6 @@ public class IndividualUsmlePage extends BaseSetup {
 		Actions actionObj = new Actions(driver);
 		actionObj.sendKeys(Keys.CONTROL).sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).click().sendKeys(Keys.DOWN)
 				.sendKeys(Keys.DOWN).sendKeys(Keys.ENTER).build().perform();
-		Thread.sleep(2000);
 	}
 
 	public void selectOk() {
@@ -54,7 +51,6 @@ public class IndividualUsmlePage extends BaseSetup {
 	public void startSession() throws InterruptedException {
 		waitForElement(driver, getStartedButton, 10);
 		driver.findElement(getStartedButton).click();
-		Thread.sleep(2000);
 	}
 
 }

@@ -59,7 +59,7 @@
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="group-Suite">
-                    <span>3 groups</span>
+                    <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,16 +103,6 @@
                       <span>
                         <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amboss.qaassignment.CustomSession" hash-for-method="createNewSession">createNewSession</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amboss.qaassignment.CustomSession" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.amboss.qaassignment.CreateExamPreparationSession" hash-for-method="login">login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -135,28 +125,6 @@
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.amboss.qaassignment.CreateExamPreparationSession</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="newExamPreparationSession">
-                  </a> <!-- newExamPreparationSession -->
-                  <span class="method-name">newExamPreparationSession</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">com.amboss.qaassignment.CustomSession</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -167,11 +135,19 @@
                   <span class="method-name">createNewSession</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.amboss.qaassignment.CreateExamPreparationSession</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
+                  <a name="newExamPreparationSession">
+                  </a> <!-- newExamPreparationSession -->
+                  <span class="method-name">newExamPreparationSession</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -189,16 +165,16 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.amboss.qaassignment.listeners&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;CreateCustomeSession&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;com.amboss.qaassignment.CustomSession&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CreateCustomeSession --&gt;
-  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;CreateCustomExamPreparationSession&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;CreateExamSession&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.amboss.qaassignment.CreateExamPreparationSession&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- CreateCustomExamPreparationSession --&gt;
+  &lt;/test&gt; &lt;!-- CreateExamSession --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;0&quot; name=&quot;CreateCustomSession&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amboss.qaassignment.CustomSession&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- CreateCustomSession --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -210,10 +186,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">CreateCustomeSession (1 class)</span>
+                <span class="test-name">CreateExamSession (1 class)</span>
               </li>
               <li>
-                <span class="test-name">CreateCustomExamPreparationSession (1 class)</span>
+                <span class="test-name">CreateCustomSession (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,30 +199,6 @@
             <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="test-group">
-              <span class="test-group-name">CreateExamSession</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">newExamPreparationSession</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">CreateSession</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">createNewSession</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
-            <div class="test-group">
-              <span class="test-group-name">Login</span>
-              <br/>
-              <div class="method-in-group">
-                <span class="method-in-group-name">login</span>
-                <br/>
-              </div> <!-- method-in-group -->
-            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-Suite" class="panel">
@@ -263,28 +215,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(2);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'newExamPreparationSession')
 data.setCell(0, 2, 'com.amboss.qaassignment.CreateExamPreparationSession')
-data.setCell(0, 3, 16671);
+data.setCell(0, 3, 21484);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createNewSession')
 data.setCell(1, 2, 'com.amboss.qaassignment.CustomSession')
-data.setCell(1, 3, 10684);
-data.setCell(2, 0, 2)
-data.setCell(2, 1, 'login')
-data.setCell(2, 2, 'com.amboss.qaassignment.CreateExamPreparationSession')
-data.setCell(2, 3, 5530);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'com.amboss.qaassignment.CustomSession')
-data.setCell(3, 3, 4790);
+data.setCell(1, 3, 9919);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 37 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -310,41 +254,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.amboss.qaassignment.CustomSession</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.amboss.qaassignment.CreateExamPreparationSession</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">19437 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">createNewSession</span>
-                <span class="method-start">24231 ms</span>
+                <span class="method-name">newExamPreparationSession</span>
+                <span class="method-start">14154 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">34915 ms</span>
+                <span class="method-start">35640 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">com.amboss.qaassignment.CreateExamPreparationSession</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.amboss.qaassignment.CustomSession</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">36017 ms</span>
+                <span class="method-start">36466 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">50052 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">newExamPreparationSession</span>
-                <span class="method-start">55583 ms</span>
+                <span class="method-name">createNewSession</span>
+                <span class="method-start">49310 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">72254 ms</span>
+                <span class="method-start">59229 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
